@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '15529802'))
-API_HASH = environ.get('API_HASH', '92bcb6aa798a6f1feadbc917fccb54d3')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5277636826:AAFDo-R22GFKb-TiEisOEKfEgC5A61T99X0")
+API_ID = int(environ.get('API_ID', '23990433'))
+API_HASH = environ.get('API_HASH', 'e6c4b6ee1933711bc4da9d7d17e1eb20')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7077611383:AAHFzZZDBhpR-e39lwzvHaV8V5jnDPbd2cQ")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -36,12 +36,12 @@ STREAMHTO = (environ.get('STREAMHTO', ''))
 BOT_USERNAME = environ.get("BOT_USERNAME", "Adv3_Obot")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '821215952 6048003536').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()] #Channel id for auto indexing ( make sure bot is admin )
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5821871362').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001818253894').split()] #Channel id for auto indexing ( make sure bot is admin )
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '821215952').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1001542373688') #Channel / Group Id for force sub ( make sure bot is admin )
+auth_channel = environ.get('AUTH_CHANNEL', '-1002456671995') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
